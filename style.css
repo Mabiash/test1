@@ -803,10 +803,6 @@ section:nth-child(2) {
         font-size: 12px;
       }
     }
-
-    .cta-btn-con{
-      margin: 2rem 0 4rem 0 !important;
-    }
   }
   section:nth-child(1) {
     height: 70dvh !important;
@@ -815,7 +811,7 @@ section:nth-child(2) {
   }
 
   .abt-information {
-    margin-top: 3rem !important;
+    margin-top: 1rem !important;
 
     h2 {
       font-size: 18px;
