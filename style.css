@@ -503,6 +503,7 @@ section:nth-child(2) {
   }
 
   .intro-container {
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
     display: flex;
@@ -557,12 +558,15 @@ section:nth-child(2) {
     .abt-imges {
       width: 50%;
       display: flex;
+      justify-content: center;
 
       img {
-        width: 85%;
+        width: 90%;
+        min-height: 20rem;
         aspect-ratio: 16/9;
         display: flex;
         align-items: center;
+
         justify-content: center;
       }
     }
@@ -573,13 +577,14 @@ section:nth-child(2) {
 .img-container {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
+
   width: 45%;
   img {
-    width: 60%;
+    width: 65%;
     max-width: 20rem;
     aspect-ratio: 1;
-    margin-top: 7rem;
+    margin-top: 8rem;
     border-radius: 50%;
     background: linear-gradient(315deg, #1c2535, #212c3f);
     box-shadow: -5px -5px 13px #0d1118, 5px 5px 13px #31415e;
@@ -597,7 +602,7 @@ section:nth-child(2) {
     animation: fadeout-headline-text;
     animation-timeline: view(0% 98%);
     transition: all 300ms;
-    margin: 5rem 0 2rem 0;
+    margin: 6rem 0 2rem 0;
 
     h1 {
       text-transform: uppercase;
@@ -689,7 +694,6 @@ section:nth-child(2) {
   }
 }
 
-.headline h2,
 .headline h1,
 .headline h3 {
   opacity: 0;
@@ -718,12 +722,6 @@ section:nth-child(2) {
   animation-delay: 0.9s;
   margin-bottom: 3rem;
   letter-spacing: 1px;
-}
-
-.headline h2 {
-  font-size: var(--lg-fontSize);
-  color: rgba(0, 255, 255, 0.795);
-  animation-delay: 0.5s;
 }
 
 .headline h1 {
@@ -790,44 +788,18 @@ section:nth-child(2) {
 
 /* 480 media screen ======================================== */
 @media (max-width: 480px) {
-  .section {
-    .headline {
-      h1 {
-      
-        font-size: 28px !important;
-        
-      }
-
-      h3{
-     
-        font-size: 12px;
-      }
-    }
-  }
-  section:nth-child(1) {
-    height: 70dvh !important;
-    max-height: 35rem !important;
-    min-height: 35rem;
-  }
-
   .abt-information {
     margin-top: 1rem !important;
 
     h2 {
-      font-size: 18px;
-      
-      letter-spacing: 1px;
     }
 
     .intro-container {
       .personal-info {
-      
         border-radius: 0px;
 
         .api-development {
-         
           .des {
-            
             h1 {
               font-size: 18px !important;
             }
@@ -962,8 +934,45 @@ section:nth-child(2) {
     margin-right: 10px;
   }
 
-  .img-container {
-    display: none;
+  main {
+    .home-p {
+      height: 40rem !important;
+      max-height: none !important;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+
+      .img-container {
+        height: auto !important;
+        background-color: ;
+        width: 28%;
+
+        img {
+          min-width: 10rem !important;
+          margin-top: 2.5rem !important;
+        }
+      }
+    }
+
+    .section {
+      .headline {
+        margin: 1.5rem 0 1.7rem 0 !important;
+        h1 {
+          background-color: ;
+          line-height: normal !important;
+          font-size: 26px !important;
+          margin-bottom: 7px !important;
+        }
+        h3 {
+          font-size: 12px;
+        }
+      }
+
+      .cta-btn-con {
+        margin-bottom: 3.5rem;
+      }
+    }
   }
 
   .section {
