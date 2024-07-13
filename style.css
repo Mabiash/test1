@@ -791,7 +791,13 @@ section:nth-child(2) {
   .abt-information {
     margin-top: 1rem !important;
 
+    .intro-container{
+   
+      margin-top: 1rem !important;
+    }
+
     h2 {
+      font-size: 18px !important;
     }
 
     .intro-container {
